@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --cor-principal: #FFB400;
-    --cor-dark: #df9c00;
-    --fundo-main: rgb(46, 46, 46);
+    --cor-principal: #00065C;
+    --cor-dark:#000545;
+    --fundo-main:#F5F7F3;
     --fundo-dois:#171717;
     --texto: #FCFBF9;
+    --dourado: #B69200;
     --max-width: 1200px;
 }
 
@@ -39,7 +40,7 @@ body{
     position: relative;
     isolation: isolate;
     min-height: 100vh;
-    background-image: url(imagens/JEAN.webp);
+    background-image: url(imagens/Retrato\ Confiante\ em\ Blazers\ Contrastantes.png);
     background-position: right right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -85,7 +86,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--cor-principal);
+    background-color: var(--fundo-main);
 }
 
 .nav__logo a img {
@@ -95,7 +96,7 @@ nav {
 
 .nav__menu__btn {
     font-size: 1.8rem;
-    color: var(--texto);
+    color: var(--cor-dark);
     cursor: pointer;
 }
 
@@ -154,6 +155,7 @@ nav {
 
 .header__container span.seo-heading-location {
     color: var(--texto);
+    padding-top: 10px;
 }
 
 .header__container p {
@@ -164,7 +166,7 @@ nav {
     color: var(--texto);
 }
 .header__container p span.desconto {
-    color: var(--cor-principal);
+    color: var(--dourado);
     font-weight: 600;
 }
 
@@ -192,7 +194,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--cor-dark);
+    background-color: #B69200;
     border-color: var(--cor-dark);
 
 }
@@ -210,14 +212,14 @@ button:hover {
     padding: 9px 10px ;
     font-display: 1.2rem;
     color: var(--texto);
-    border: 1px solid var(--cor-principal);
+    border: 1px solid var(--dourado);
     border-radius: 100%;
     transition: 0.3s;
 }
 
 .socials a:hover {
     background-color: var(--cor-dark);
-    color: #060604;
+    color: #ffffff;
 }
  /* -- FIM DO HERO */
 
@@ -232,22 +234,23 @@ button:hover {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
-    gap: 50px;
+    gap: 30px;
 }
 
 .sobre-equipe .imagem-equipe img#mobile-foto {
     width: 100%;
-    aspect-ratio: 3/4;
+    aspect-ratio: 4/3;
     object-fit: cover;
     border-radius: 25px;
     box-shadow: 0px 10px 25px 5px rgba(0, 0, 0, 0.582);
+    object-position: center ;
 
 }
 
 .titulo-conteudo {
     text-align: center;
     font-family: "Roboto Slab";
-    color: var(--texto);
+    color: var(--cor-dark);
     line-height: 2.3rem;
     font-size: 2rem;
     padding-bottom: 25px;
@@ -259,7 +262,8 @@ button:hover {
     height: 5px;
     display: block;
     margin: 10px auto;
-    background-color: var(--cor-dark);
+    background-color: #B69200;
+    color: var(--dourado);
     border-radius: 10px;
 }
 
@@ -274,7 +278,7 @@ span {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 200;
-    color: var(--texto);
+    color: var(--fundo-dois);
 }
      /* -- FIM DA SEÇÃO EQUIPE  */
 
@@ -285,8 +289,7 @@ span {
     #servicos {
         display: block;
         padding: 3.6rem 0rem 0rem 0rem;
-        background: #171717;
-        background: linear-gradient(1deg,rgba(23, 23, 23, 1) 0%, rgba(46, 46, 46, 1) 100%);
+        background-color: var(--cor-principal);
         width: 100%;
         height: fit-content;
         color: var(--texto);
@@ -452,8 +455,8 @@ span {
 }
 
 .section-avaliacoes  {
-    background-color: var(--fundo-dois);
-    color: var(--texto);
+    background-color: var(--fundo-main);
+    color:var(--cor-dark);
 
 }
 .swiper-slide-button {
@@ -478,7 +481,7 @@ span {
 }
 
 .fundo-teste {
-    background-color: rgb(255, 174, 0);
+    background-color:#000545;
     box-shadow: inset 0 0 50px rgba(255, 244, 197, 0.4);
     position: relative;
     border-radius: 25px;
@@ -493,7 +496,7 @@ span {
     position: absolute;
     left: 32px;
     transform: translateY(190px);
-    width: 150px;
+    width: 80px;
 }
 address.rua{
     padding-top: 10px;
@@ -643,6 +646,8 @@ section.section-location {
 
  .section-location iframe#local-mobile {
     width: 100%;
+    padding-top: 10px;
+    font-size: 1.2rem;
  }
 
  .box-texto {
@@ -684,7 +689,7 @@ section.section-location {
 
 
 footer {
-    background-color: var(--fundo-dois);
+    background-color: var(--cor-dark);
     display: flex;
     flex-flow: row wrap;
 }
@@ -750,7 +755,7 @@ footer .logo-footer img {
     padding: 9px 10px ;
     font-display: 1.2rem;
     color: var(--texto);
-    background-color: var(--fundo-main);
+    background-color: var(--dourado);
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -773,13 +778,15 @@ footer .logo-footer img {
 @media (width > 768px) {
     nav{
         position: static;
-        padding: 2rem 1rem;
-        max-width: var(--max-width);
+        padding: .7rem 1rem .7rem 1rem;
+        max-width: 100%;
         margin-inline: auto;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         gap: 3rem;
+        background-color: #F5F7F3;
+        height: 70px;
 
     }
 
@@ -791,7 +798,7 @@ footer .logo-footer img {
     }
 
     .nav__logo a img {
-        max-width: 120px;
+        max-width: 70px;
     }
 
     .nav__menu__btn {
@@ -802,13 +809,18 @@ footer .logo-footer img {
     .nav__links {
         position: static;
         width: fit-content;
-        padding: 0;
+        padding-top: .5rem;
         margin-top: 8px;
         flex-direction: row;
         gap: 3rem;
         background-color: transparent;
+        color: #000545;
         transform: none !important;
         font-size: 15px;
+    }
+
+    .nav__links li > a {
+        color: var(--cor-dark);
     }
 
     .nav__links a:hover {
@@ -816,7 +828,7 @@ footer .logo-footer img {
     }
 
     .main {
-        background-image: url(imagens/jean\ PC.jpg);
+        background-image: url(imagens/dentista-fundo.png);
         background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -907,7 +919,7 @@ footer .logo-footer img {
   display: inline-block;
   padding: .75rem 1.25rem;
   border-radius: 10rem;
-  color: #fff;
+  color:var(--cor-principal);
   overflow: hidden;
   text-transform: capitalize;
   text-align: center;
@@ -917,7 +929,7 @@ footer .logo-footer img {
   transition: all .3s;
   position: relative;
   overflow: hidden;
-  border: .5px solid var(--texto);
+  border: .5px solid var(--cor-principal);
   z-index: 1;
   margin-top: 70px;
   width: 200px;
@@ -968,7 +980,7 @@ footer .logo-footer img {
     font-family: "Roboto Slab";
     font-weight: 800;
     font-size: 3.2rem;
-    padding: 0rem 0rem 3rem 0rem;
+    padding: 2.5rem 0rem 3rem 0rem;
 }
 
 .container-servicos {
@@ -1001,14 +1013,14 @@ footer .logo-footer img {
   /* FOOTER */
 
   footer {
-    background-color: var(--fundo-dois);
+    background-color: var(--cor-dark);
     color: var(--texto);
-    padding: 5rem;
+    padding: 4rem;
     height: 30%;
 }
 
 .logo-footer img {
-    width: 200px;
+    width: 100px;
     margin: auto;
     padding-bottom: 2rem;
 }
@@ -1077,7 +1089,7 @@ footer .logo-footer img {
     padding: 9px 10px ;
     font-display: 1.2rem;
     color: var(--texto);
-    background-color: var(--fundo-main);
+    background-color: var(--dourado);
     border-radius: 10px;
     transition: 0.3s;
 }
