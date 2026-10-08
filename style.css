@@ -40,8 +40,8 @@ body{
     position: relative;
     isolation: isolate;
     min-height: 100vh;
-    background-image: url(imagens/Retrato\ Confiante\ em\ Blazers\ Contrastantes.png);
-    background-position: right right;
+    background-image: url(imagens/fundo-mobile.png);
+    background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #060604;
@@ -140,7 +140,7 @@ nav {
     gap: 0 0.5rem;
     flex-wrap: wrap;
     font-weight: 800;
-    color: var(--texto);
+    color: var(--cor-principal);
     font-family: "Roboto Slab", sans-serif;
 }
 
@@ -164,7 +164,7 @@ nav {
     margin-bottom: 3rem;
     max-width: calc((var(--max-width))/2);
     line-height: 1.75rem;
-    color: var(--texto);
+    color: var(--cor-principal);
 }
 .header__container p span.desconto {
     color: var(--dourado);
@@ -212,14 +212,14 @@ button:hover {
     display: inline-flex;
     padding: 9px 10px ;
     font-display: 1.2rem;
-    color: var(--texto);
+    color: var(--cor-principal);
     border: 1px solid var(--dourado);
     border-radius: 100%;
     transition: 0.3s;
 }
 
 .socials a:hover {
-    background-color: var(--cor-dark);
+    background-color:#B69200;
     color: #ffffff;
 }
  /* -- FIM DO HERO */
@@ -548,7 +548,33 @@ iframe {
 
 
 /* INICIO DO MEU TESTE DE CARROSEL */
+.wpp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: .55rem;
+  background-color: rgb(46, 199, 49);
+  border-radius: 50%;
+  margin: 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+    
+}
 
+img.botao-fixo {
+    width: 50px;
+   
+
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+.wpp-fixo:hover {
+    transform: scale(1.1);
+}
 
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -686,6 +712,10 @@ section.section-location {
     display: none;
 }
 
+.wpp-fixo {
+    margin: .7rem;
+}
+
     /* FOOTER */
 
 
@@ -783,10 +813,10 @@ footer .logo-footer img {
         max-width: 100%;
         margin-inline: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: flex-start;
         gap: 3rem;
-        background-color: #F5F7F3;
+        background-color: transparent;
         height: 70px;
 
     }
@@ -829,11 +859,11 @@ footer .logo-footer img {
     }
 
     .main {
-        background-image: url(imagens/dentista-fundo.png);
+        background-image: url(imagens/Banner\ Corporativo\ de\ Saúde\ Bucal.png);
         background-position: top center;
-        background-size: cover;
+        background-size:cover;
         background-repeat: no-repeat;
-        background-color: #060604;
+        background-color: #eaf9fc;
     }
 
     .header__container {
@@ -848,12 +878,11 @@ footer .logo-footer img {
     padding: 1rem 1.5rem;
     margin-bottom:2rem ;
     outline: none;
-    border: 1px solid white;
     font-size: 1rem;
     font-family: "Roboto";
     border-radius: 50px;
-    background-color:transparent;
-    color: var(--texto);
+    background-color:rgb(197, 226, 252);
+    color: var(--cor-dark);
     transition: 0.3s;
     gap: 3rem;
     cursor: pointer;
