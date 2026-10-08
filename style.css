@@ -720,7 +720,7 @@ section.section-location {
 
 
 footer {
-    background-color: var(--cor-dark);
+    background-color: var(--cor-principal);
     display: flex;
     flex-flow: row wrap;
 }
@@ -729,34 +729,21 @@ footer {
     flex-basis: 100%;
 }
 footer .logo-footer img {
-    width: 150px;
+    width: 120px;
     padding: 1.5rem 15px;
     flex-basis: 100%;
 }
 
-.servicos-footer {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 5px;
-    padding-left: 15px;
-    font-size: 13px;
-    padding-bottom: 10px;
-}
 
-.servicos-footer a {
-    color: var(--texto);
-    text-decoration: none;
-    font-weight: 200;
-    font-size: 13px;
-}
+
 
 .menu-footer {
     display: flex;
+    flex-basis: 100%;
     justify-content: flex-start;
     flex-direction: column;
     gap: 5px;
-    padding-left: 80px;
+    padding-left: 20px;
     padding-bottom: 10px;
 
 }
