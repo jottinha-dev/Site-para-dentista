@@ -129,7 +129,7 @@ nav {
 .header__container {
     max-width: var(--max-width);
     margin: auto;
-    padding: 11rem 2rem 4rem 2rem;
+    padding: 6.5rem 2rem 4rem 2rem;
 }
 
 .header__container h1 {
@@ -161,7 +161,7 @@ nav {
 
 .header__container p {
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     max-width: calc((var(--max-width))/2);
     line-height: 1.75rem;
     color: var(--cor-principal);
