@@ -41,7 +41,7 @@ body{
     isolation: isolate;
     min-height: 100vh;
     background-image: url(imagens/fundo-mobile.png);
-    background-position: center bottom;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #060604;
@@ -90,7 +90,7 @@ nav {
 }
 
 .nav__logo a img {
-    max-width: 100px;
+    max-width: 65px;
      
 }
 
@@ -187,8 +187,8 @@ button {
     font-size: 0.6rem;
     font-family: "Roboto";
     border-radius: 50px;
-    background-color:transparent;
-    color: var(--texto);
+    background-color:rgb(194, 218, 255);
+    color: var();
     transition: 0.3s;
     gap: 0rem;
     cursor: pointer;
